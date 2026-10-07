@@ -1,0 +1,26 @@
+3RBL FINAL IMAGE + DISCORD PREVIEW FIX
+
+IMPORTANT: Upload the files into the matching folders in the GitHub repo.
+Do NOT upload this ZIP as the website files.
+
+1) Replace root index.html
+2) Replace css/styles.css
+3) Replace seasons/season-08.html through season-14.html
+4) Add/replace these in assets/images/:
+   - season-08.webp
+   - season-09.webp
+   - season-10.jpg
+   - season-11.webp
+   - season-12.png
+   - season-13.png
+   - season-14.png
+   - 3rbl-website-preview.webp
+   - 3rbl-discord-preview.jpg
+
+The Season 8-14 HTML now uses the full GitHub Pages image URLs. This is intentional because those season files are fetched into index.html; ../assets/ would resolve relative to the homepage and fail.
+
+After committing, wait for GitHub Pages to deploy. Test the homepage with:
+https://3rdgearprod.github.io/3RBL-NEW-ERA/
+
+For Discord, use a cache-busting query once:
+https://3rdgearprod.github.io/3RBL-NEW-ERA/?v=3rbl

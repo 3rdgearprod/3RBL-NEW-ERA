@@ -253,3 +253,20 @@ footer{margin-top:28px!important}
   .history-grid,.info-grid{grid-template-columns:1fr}
   .season-img-wrap{height:220px!important}
 }
+
+/* 3RBL website sneak-peek */
+.website-preview{max-width:1000px;margin:0 auto 24px;background:linear-gradient(145deg,#101010,#080808);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative}
+.website-preview-media{height:360px;position:relative;overflow:hidden;background:#050505}
+.website-preview-media img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block;transition:transform .5s ease}
+.website-preview:hover .website-preview-media img{transform:scale(1.025)}
+.website-preview-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 20%,rgba(0,0,0,.22) 45%,rgba(0,0,0,.9) 100%);pointer-events:none}
+.website-preview-badge{position:absolute;top:16px;left:16px;background:rgba(0,0,0,.78);border:1px solid var(--gold);color:var(--gold);padding:6px 11px;font-family:'Bebas Neue',sans-serif;font-size:.72rem;letter-spacing:.16em}
+.website-preview-caption{position:absolute;left:22px;bottom:20px;display:flex;flex-direction:column;gap:2px;text-shadow:2px 2px 0 rgba(0,0,0,.75)}
+.website-preview-caption span,.preview-kicker{font-family:'Bebas Neue',sans-serif;font-size:.68rem;letter-spacing:.3em;color:var(--gold)}
+.website-preview-caption strong{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.7rem,4vw,2.8rem);letter-spacing:.04em;color:#fff;line-height:.95}
+.website-preview-copy{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 22px;border-top:2px solid var(--gold);background:linear-gradient(135deg,#111,#080808)}
+.website-preview-copy h3{font-family:'Bebas Neue',sans-serif;font-size:1.35rem;color:#fff;letter-spacing:.05em;margin:2px 0 4px}
+.website-preview-copy p{color:#999;font-size:.85rem;margin:0;max-width:650px;line-height:1.45}
+.preview-btn{flex:0 0 auto;appearance:none;border:1px solid var(--gold);background:linear-gradient(135deg,var(--red),#70000e);color:#fff;border-radius:7px;padding:11px 15px;font-family:'Bebas Neue',sans-serif;letter-spacing:.1em;cursor:pointer;transition:.18s ease}
+.preview-btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(208,2,27,.2)}
+@media(max-width:700px){.website-preview-media{height:280px}.website-preview-copy{flex-direction:column;align-items:stretch}.preview-btn{width:100%}}

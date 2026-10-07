@@ -6,8 +6,18 @@
 <meta name="theme-color" content="#080808">
 <meta name="description" content="3RBL, 3rdy's Retro Bowl League. Seasons 1–14, standings, awards, playoffs and Super Bowl history.">
 <meta property="og:title" content="3RBL — 3rdy's Retro Bowl League">
-<meta property="og:description" content="Media-heavy, realism-driven Retro Bowl league. Season 14 complete.">
+<meta property="og:description" content="Explore the official 3RBL league archive, Super Bowls, seasons, standings, awards and the New Era.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://3rdgearprod.github.io/3RBL-NEW-ERA/">
+<meta property="og:image" content="https://3rdgearprod.github.io/3RBL-NEW-ERA/assets/images/3rbl-discord-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="3RBL New Era Halloween Retro Bowl League graphic">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="3RBL — 3rdy's Retro Bowl League">
+<meta name="twitter:description" content="The official 3RBL league archive. Seasons, Super Bowls, standings, awards and more.">
+<meta name="twitter:image" content="https://3rdgearprod.github.io/3RBL-NEW-ERA/assets/images/3rbl-discord-preview.jpg">
 <title>3RBL — 3rdy's Retro Bowl League</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,6 +60,25 @@
   <section id="seasons" class="section-wrap">
     <div class="section-kicker">LEAGUE ARCHIVE</div>
     <h2 class="section-heading">SELECT A SEASON</h2>
+    <div class="website-preview">
+      <div class="website-preview-media">
+        <img src="assets/images/3rbl-website-preview.webp" alt="3RBL Retro Bowl League website preview" loading="eager" decoding="async">
+        <div class="website-preview-shade"></div>
+        <div class="website-preview-badge">3RBL • NEW ERA</div>
+        <div class="website-preview-caption">
+          <span>GET A SNEAK PEEK</span>
+          <strong>THE 3RBL LEAGUE ARCHIVE</strong>
+        </div>
+      </div>
+      <div class="website-preview-copy">
+        <div>
+          <div class="preview-kicker">THE OFFICIAL ARCHIVE</div>
+          <h3>EVERY SEASON. EVERY STORY. ONE PLACE.</h3>
+          <p>Explore standings, Super Bowls, awards, playoff runs and the history behind the 3RBL.</p>
+        </div>
+        <button class="preview-btn" onclick="document.getElementById('seasons').scrollIntoView({behavior:'smooth'})">EXPLORE THE ARCHIVE →</button>
+      </div>
+    </div>
     <div class="season-picker"><button class="season-pick" data-season="1" onclick="loadSeason(1)">S1<span class="pick-champ">PHI</span></button><button class="season-pick" data-season="2" onclick="loadSeason(2)">S2<span class="pick-champ">DAL</span></button><button class="season-pick" data-season="3" onclick="loadSeason(3)">S3<span class="pick-champ">SF</span></button><button class="season-pick" data-season="4" onclick="loadSeason(4)">S4<span class="pick-champ">CAR</span></button><button class="season-pick" data-season="5" onclick="loadSeason(5)">S5<span class="pick-champ">PHI</span></button><button class="season-pick" data-season="6" onclick="loadSeason(6)">S6<span class="pick-champ">DAL</span></button><button class="season-pick" data-season="7" onclick="loadSeason(7)">S7<span class="pick-champ">DET</span></button><button class="season-pick" data-season="8" onclick="loadSeason(8)">S8<span class="pick-champ">TB</span></button><button class="season-pick" data-season="9" onclick="loadSeason(9)">S9<span class="pick-champ">PHI</span></button><button class="season-pick" data-season="10" onclick="loadSeason(10)">S10<span class="pick-champ">SF</span></button><button class="season-pick" data-season="11" onclick="loadSeason(11)">S11<span class="pick-champ">DAL</span></button><button class="season-pick" data-season="12" onclick="loadSeason(12)">S12<span class="pick-champ">SF</span></button><button class="season-pick" data-season="13" onclick="loadSeason(13)">S13<span class="pick-champ">SF</span></button><button class="season-pick active" data-season="14" onclick="loadSeason(14)">S14<span class="pick-champ">SF</span></button></div>
     <div id="season-stage" class="season-stage"><div class="season-loading">LOADING SEASON 14…</div></div>
   </section>
