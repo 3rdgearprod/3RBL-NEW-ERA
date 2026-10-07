@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="3RBL, 3rdy's Retro Bowl League. Seasons 1–14, standings, awards, playoffs and Super Bowl history.">
+<meta property="og:title" content="3RBL — 3rdy's Retro Bowl League">
+<meta property="og:description" content="Media-heavy, realism-driven Retro Bowl league. Season 14 complete.">
+<meta property="og:type" content="website">
+<title>3RBL — 3rdy's Retro Bowl League</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="ticker"><div class="ticker-inner"><span>SEASON 14 COMPLETE</span><span>SUPER BOWL XIV — SAN FRANCISCO 49ERS</span><span>3RBL — 3RDY'S RETRO BOWL LEAGUE</span><span>SEASON 14 COMPLETE</span><span>SUPER BOWL XIV — SAN FRANCISCO 49ERS</span><span>3RBL — 3RDY'S RETRO BOWL LEAGUE</span></div></div>
+<nav>
+  <div class="nav-shell">
+    <a class="nav-brand" href="#home">3RBL</a>
+    <div class="nav-links">
+      <a href="#home">HOME</a>
+      <a href="#seasons">SEASONS</a>
+      <a href="#history">HISTORY</a>
+      <a href="#settings">SETTINGS</a>
+      <a href="#hof">HALL OF FAME</a>
+      <a href="#join">JOIN</a>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <div class="hero-badges"><span class="badge">3RDY'S RETRO BOWL LEAGUE</span><span class="badge outline">REALISM-DRIVEN</span><span class="badge outline">SEASONS 1–14</span></div>
+    <div class="hero-eyebrow">THE NEW ERA OF RETRO BOWL</div>
+    <h1 class="hero-title">3RBL <em>LEAGUE ARCHIVE</em></h1>
+    <div class="hero-season-badge">🏆 SEASON 14 COMPLETE — SAN FRANCISCO 49ERS</div>
+    <p class="hero-sub">A living archive of standings, awards, playoff runs, Super Bowls and the stories that built the 3RBL.</p>
+    <div class="quick-stats">
+      <div class="quick-stat"><b>14</b><span>Seasons Complete</span></div>
+      <div class="quick-stat"><b>14</b><span>Super Bowls</span></div>
+      <div class="quick-stat"><b>5×</b><span>49ers Champions</span></div>
+      <div class="quick-stat"><b>2026</b><span>Current Era</span></div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section id="seasons" class="section-wrap">
+    <div class="section-kicker">LEAGUE ARCHIVE</div>
+    <h2 class="section-heading">SELECT A SEASON</h2>
+    <div class="season-picker"><button class="season-pick" data-season="1" onclick="loadSeason(1)">S1<span class="pick-champ">PHI</span></button><button class="season-pick" data-season="2" onclick="loadSeason(2)">S2<span class="pick-champ">DAL</span></button><button class="season-pick" data-season="3" onclick="loadSeason(3)">S3<span class="pick-champ">SF</span></button><button class="season-pick" data-season="4" onclick="loadSeason(4)">S4<span class="pick-champ">CAR</span></button><button class="season-pick" data-season="5" onclick="loadSeason(5)">S5<span class="pick-champ">PHI</span></button><button class="season-pick" data-season="6" onclick="loadSeason(6)">S6<span class="pick-champ">DAL</span></button><button class="season-pick" data-season="7" onclick="loadSeason(7)">S7<span class="pick-champ">DET</span></button><button class="season-pick" data-season="8" onclick="loadSeason(8)">S8<span class="pick-champ">TB</span></button><button class="season-pick" data-season="9" onclick="loadSeason(9)">S9<span class="pick-champ">PHI</span></button><button class="season-pick" data-season="10" onclick="loadSeason(10)">S10<span class="pick-champ">SF</span></button><button class="season-pick" data-season="11" onclick="loadSeason(11)">S11<span class="pick-champ">DAL</span></button><button class="season-pick" data-season="12" onclick="loadSeason(12)">S12<span class="pick-champ">SF</span></button><button class="season-pick" data-season="13" onclick="loadSeason(13)">S13<span class="pick-champ">SF</span></button><button class="season-pick active" data-season="14" onclick="loadSeason(14)">S14<span class="pick-champ">SF</span></button></div>
+    <div id="season-stage" class="season-stage"><div class="season-loading">LOADING SEASON 14…</div></div>
+  </section>
+
+  <section id="history" class="section-wrap" style="margin-top:38px">
+    <div class="section-kicker">THE TROPHY CABINET</div>
+    <h2 class="section-heading">SUPER BOWL CHAMPIONS</h2>
+    <div class="history-grid"><button class="history-card" onclick="loadSeason(1)"><span class="yr">SEASON 1</span><span class="winner">Philadelphia Eagles</span><span class="score">PHI 80 – 54 TB</span></button><button class="history-card" onclick="loadSeason(2)"><span class="yr">SEASON 2</span><span class="winner">Dallas Cowboys</span><span class="score">DAL 87 – 70 NOS</span></button><button class="history-card" onclick="loadSeason(3)"><span class="yr">SEASON 3</span><span class="winner">San Francisco 49ers</span><span class="score">SF 64 – 60 TB</span></button><button class="history-card" onclick="loadSeason(4)"><span class="yr">SEASON 4</span><span class="winner">Carolina Panthers</span><span class="score">CAR 80 – 72 TB</span></button><button class="history-card" onclick="loadSeason(5)"><span class="yr">SEASON 5</span><span class="winner">Philadelphia Eagles</span><span class="score">PHI 67 – 64 KC</span></button><button class="history-card" onclick="loadSeason(6)"><span class="yr">SEASON 6 🇦🇷</span><span class="winner">Dallas Cowboys</span><span class="score">DAL 72 – 72 TB (OT)</span></button><button class="history-card" onclick="loadSeason(7)"><span class="yr">SEASON 7</span><span class="winner">Detroit Lions</span><span class="score">DET 86 – 80 JAX</span><span class="venue">North Korea</span></button><button class="history-card" onclick="loadSeason(8)"><span class="yr">SEASON 8</span><span class="winner">Tampa Bay Buccaneers</span><span class="score">TB 70 – 62 DAL</span></button><button class="history-card" onclick="loadSeason(9)"><span class="yr">SEASON 9</span><span class="winner">Philadelphia Eagles</span><span class="score">PHI 78 – 72 NOS</span></button><button class="history-card" onclick="loadSeason(10)"><span class="yr">SEASON 10</span><span class="winner">San Francisco 49ers</span><span class="score">SF 96 – 88 PHI</span><span class="venue">Germany 🇩🇪</span></button><button class="history-card" onclick="loadSeason(11)"><span class="yr">SEASON 11</span><span class="winner">Dallas Cowboys</span><span class="score">DAL 80 – 78 DEN</span><span class="venue">Atlanta, Georgia 🇺🇸</span></button><button class="history-card" onclick="loadSeason(12)"><span class="yr">SEASON 12</span><span class="winner">San Francisco 49ers</span><span class="score">SF 88 – 64 DAL</span><span class="venue">Brazil 🇧🇷</span></button><button class="history-card" onclick="loadSeason(13)"><span class="yr">SEASON 13</span><span class="winner">San Francisco 49ers</span><span class="score">SF 102 – 80 LAC</span><span class="venue">Colorado 🏔️</span></button><button class="history-card" onclick="loadSeason(14)"><span class="yr">SEASON 14</span><span class="winner">San Francisco 49ers</span><span class="score">SF 88 – 80 CAR</span><span class="venue">Los Angeles 🌴</span></button></div>
+  </section>
+
+  <section id="settings" class="section-wrap" style="margin-top:38px">
+    <div class="section-kicker">THE RULEBOOK</div>
+    <h2 class="section-heading">LEAGUE SETTINGS</h2>
+    <div class="info-grid">
+      <article class="info-card"><h3>🎮 REGULAR SEASON</h3><ul><li>Start Year: Year 2 (Roster Optional)</li><li>Restarts: 3</li><li>Quarter Length: 2 Minutes</li><li>Difficulty: Medium</li></ul></article>
+      <article class="info-card"><h3>🏆 PLAYOFFS</h3><ul><li>Format: CFB-Style, No Byes</li><li>Restarts: 1 Only</li><li>Quarter Length: 3 Minutes</li><li>Difficulty: Hard</li><li>Upsets are possible.</li></ul></article>
+      <article class="info-card"><h3>📰 MEDIA RULES</h3><ul><li>Injuries must be announced publicly.</li><li>Player illegal activity must be reported.</li><li>Media narratives matter. The media covers YOU.</li></ul></article>
+      <article class="info-card"><h3>📋 COACHING RULES</h3><ul><li>Coaches build legacies.</li><li>2 bad seasons in a row → eligible to be fired by the 3rdy Committee.</li><li>Fired coaches may find another job.</li><li>Custom media coverage & graphics every other week.</li></ul></article>
+    </div>
+  </section>
+
+  <section id="hof" class="section-wrap" style="margin-top:38px">
+    <div class="section-kicker">LEGENDS NEVER LEAVE</div>
+    <h2 class="section-heading">HALL OF FAME REQUIREMENTS</h2>
+    <div class="info-grid">
+      <article class="info-card"><h3>🏛️ ENTRY STANDARD</h3><ul><li>5 Seasons minimum tenure</li><li>40+ career wins</li><li>2 Super Bowl berths</li><li>1 Super Bowl win</li></ul><p style="margin-top:10px">Requirements may increase as the league grows. Get in early.</p></article>
+      <article class="info-card"><h3>📚 WHAT THIS ARCHIVE TRACKS</h3><ul><li>Season standings & divisional records</li><li>League awards & player performances</li><li>Playoff brackets and championship games</li><li>Major media and league storylines</li></ul></article>
+    </div>
+  </section>
+
+  <section id="join" class="cta-wrap">
+    <div class="cta-block">
+      <div class="cta-h">YOUR COACHING CAREER STARTS NOW</div>
+      <div class="cta-sub">Season 14 is in the books. The 3RBL era continues.</div>
+      <a class="cta-btn" href="https://discord.gg/dU9wHnpTJb" target="_blank" rel="noopener">JOIN THE LEAGUE →</a>
+      <span class="cta-discord">discord.gg/dU9wHnpTJb</span>
+    </div>
+  </section>
+</main>
+
+<footer>© 3RBL — 3rdy's Retro Bowl League · New Era · Season 14 <span style="color:var(--gold)">♥</span> Built for the league.</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
